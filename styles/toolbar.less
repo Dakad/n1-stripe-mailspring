@@ -35,12 +35,16 @@
   margin:5px 9px;
 }
 
-.search-bar {
+.nylas-search-bar.thread-search-bar {
+  margin-top: 0px;
+}
+
+.nylas-search-bar {
     margin:0;
+
     .menu {
         .header-container {
             height: @toolbar-item-height;
-            margin: 0 10.5px 0 0;
 
             input {
                 transition: border-width 0.1s ease-in;
@@ -73,11 +77,13 @@
         .content-container {
           position: absolute;
           top: 23px;
+          width: 100%;
           max-height: 95vh;
+          margin-top: 9px;
           overflow-y: auto;
           z-index: 2;
-          width: 100%;
-          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);}
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+        }
     }
     &.focused {
         input[type="text"] {
